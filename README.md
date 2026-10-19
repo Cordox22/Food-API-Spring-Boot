@@ -66,3 +66,14 @@ Se sono presenti test (cartella `src/test`), esegui:
 
 ## Licenza
 Questo repository include una licenza MIT (file LICENSE).
+
+## File di esempio per la configurazione del datasource
+È stato aggiunto `src/main/resources/application.properties.example` con un esempio di configurazione MySQL per lo sviluppo locale. NON inserire credenziali reali nel file `application.properties` del repository; usa questo file come template e popolalo con valori locali o con variabili d'ambiente.
+
+Esempio rapido:
+```
+# copia il file in src/main/resources/application.properties e aggiorna i valori
+spring.datasource.url=jdbc:mysql://localhost:3306/fooddb
+spring.datasource.username=your_db_user
+spring.datasource.password=your_db_password
+```
